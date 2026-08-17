@@ -17,7 +17,7 @@ import DetailSpacePage from "./pages/DetailSpacePage";
 export default function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/ZONCA">
         <Routes>
           <Route index element={<HomePage></HomePage>} />
 
