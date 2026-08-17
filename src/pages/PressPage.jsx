@@ -19,7 +19,10 @@ export default function PressPage() {
                       rel="noopener noreferrer"
                     >
                       <figure>
-                        <img src={el.image} alt={el.image} />
+                        <img
+                          src={`${import.meta.env.BASE_URL}${el.image}`}
+                          alt={el.image}
+                        />
                         <figcaption>{el.title}</figcaption>
                       </figure>
                     </Link>
