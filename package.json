@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/MhZ9191/ZONCA",
+  "homepage": "https://mhz9191.github.io/ZONCA/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
