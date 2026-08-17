@@ -1,0 +1,96 @@
+.header-section {
+  background-color: #261f1b;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.header-section .active {
+  color: white;
+}
+
+.header-div {
+  max-width: 1400px;
+  padding: 20px 0;
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  width: 200px;
+}
+
+.header-logo img {
+  width: 100%;
+}
+
+.header-up,
+.header-burger {
+  color: white;
+  font-size: 50px;
+}
+
+.header-up:hover,
+.header-burger:hover {
+  cursor: pointer;
+}
+
+.header-hidden-link {
+  padding: 10px;
+  width: 90vw;
+  font-size: 20px;
+  margin: 0 auto;
+  color: var(--colore-testo);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-hidden-link div {
+  text-align: center;
+  width: calc(100% / 3 - (10px * 2 / 3));
+  padding: 10px 0;
+}
+
+.header-hidden-link div:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.header-link {
+  display: none;
+  color: var(--colore-testo);
+  font-size: 20px;
+  width: 70%;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.header-section a {
+  text-decoration: none;
+  color: var(--colore-testo);
+  transition: all 0.2s ease;
+}
+
+.header-section a:hover {
+  color: white;
+  transition: all 0.2s ease;
+}
+
+@media screen and (min-width: 992px) {
+  .header-burger,
+  .header-up,
+  .header-hidden-link {
+    display: none;
+  }
+
+  .header-link {
+    display: flex;
+  }
+}

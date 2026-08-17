@@ -1,0 +1,73 @@
+.job-section {
+  padding: 250px 20px 60px 20px;
+  background-color: #261f1b;
+  color: var(--colore-testo);
+}
+
+.job-section a {
+  text-decoration: none;
+  color: var(--colore-testo);
+  transition: all 0.3s ease;
+}
+
+.job-section a:hover {
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.job-div {
+  max-width: 1200px;
+  width: 90vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.job-div p,
+.job-div li {
+  font-size: 20px;
+}
+
+.job-div-top {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.job-div-top h1 {
+  font-size: 42px;
+}
+
+.job-div-low h3,
+.job-div-top h3 {
+  font-size: 22px;
+}
+
+.job-div-low {
+  padding: 50px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.job-list div:last-child {
+  padding-top: 10px;
+  text-align: left;
+  width: 200px;
+  margin: 0 auto 0 200px;
+}
+
+@media screen and (min-width: 992px) {
+  .job-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .job-list div:last-child {
+    padding-top: 0;
+    width: 200px;
+    margin: 0;
+  }
+}

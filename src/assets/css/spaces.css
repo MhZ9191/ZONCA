@@ -1,0 +1,103 @@
+.spaces-section {
+  color: var(--colore-testo);
+  padding: 250px 20px 20px 20px;
+}
+
+.spaces-section h1 {
+  font-size: 42px;
+  text-align: center;
+}
+
+.spaces-zones {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.spaces-zones span {
+  padding: 5px 10px;
+  width: calc(100% / 3 - (10px * 2 / 3));
+  text-wrap: nowrap;
+  transition: all 0.3s ease;
+}
+
+.spaces-zones span:hover {
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.spaces-div {
+  max-width: 1000px;
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 40px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.spaces-card {
+  position: relative;
+  aspect-ratio: 11/8;
+  overflow: hidden;
+}
+
+.spaces-card a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.678);
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+.spaces-card a:hover {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.spaces-card img {
+  display: block;
+  border-radius: 16px;
+  width: 100%;
+  transition: all 0.3s ease;
+  height: 100%;
+  object-fit: cover;
+}
+
+.spaces-card:hover img {
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.spaces-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.active-filter {
+  color: white;
+}
+
+@media screen and (min-width: 992px) {
+  .spaces-zones span {
+    width: calc(100% / 5 - (10px * 4 / 5));
+  }
+
+  .spaces-div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .spaces-card {
+    width: calc(100% / 2 - (30px * 1 / 2));
+  }
+}

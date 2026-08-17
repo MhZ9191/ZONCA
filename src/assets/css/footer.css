@@ -1,0 +1,62 @@
+.footer-section {
+  padding: 80px 20px 50px 20px;
+  background-color: var(--colore-sfondo);
+  color: var(--colore-testo);
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.footer-div {
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-div a {
+  text-decoration: none;
+  color: var(--colore-testo);
+  transition: all 0.2s ease;
+}
+
+.footer-div a:hover {
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.footer-div img {
+  width: 100%;
+}
+
+.instagram-div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  width: 300px;
+}
+
+.instagram-div img {
+  width: 30px;
+  height: 30px;
+}
+
+.instagram-div span {
+  text-wrap: nowrap;
+}
+
+.footer-logo img {
+  width: 150px;
+}
+
+.footer-logo {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}

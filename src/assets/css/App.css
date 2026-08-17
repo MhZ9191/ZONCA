@@ -1,0 +1,15 @@
+:root {
+  --colore-testo: rgba(165, 165, 165, 0.788);
+  --colore-sfondo: #261f1b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #261f1b;
+}

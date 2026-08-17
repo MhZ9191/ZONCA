@@ -1,0 +1,129 @@
+.product-section {
+  padding: 250px 10px 80px 10px;
+  background-color: #261f1b;
+}
+
+.product-top-div {
+  width: 90vw;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.product-top-div h1 {
+  color: var(--colore-testo);
+  text-align: center;
+  font-size: 42px;
+}
+
+.product-div {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+
+.product-card {
+  transition: all 0.2s ease;
+  width: 75%;
+  aspect-ratio: 10/13;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+.product-card img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.2s ease;
+}
+
+.product-card a > div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  color: rgba(255, 255, 255, 0.678);
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+}
+
+.product-card:hover img {
+  opacity: 0.5;
+}
+
+.product-card:hover a > div {
+  color: white;
+}
+
+.product-types {
+  padding: 20px 0 0 0;
+  color: var(--colore-testo);
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.product-types span {
+  padding: 5px 10px;
+  width: calc(100% / 3 - (10px * 2 / 3));
+  text-wrap: nowrap;
+  transition: all 0.3s ease;
+}
+
+.product-types span:hover {
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.active-color {
+  color: white;
+}
+
+@media screen and (min-width: 678px) {
+  .product-div {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .product-card {
+    width: calc(100% / 2 - (30px * 1 / 2));
+  }
+
+  .product-types span {
+    width: calc(100% / 4 - (10px * 3 / 4));
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .product-div {
+    max-width: 1000px;
+  }
+
+  .product-card {
+    width: calc(100% / 3 - (30px * 2 / 3));
+    margin: 0;
+  }
+
+  .product-types {
+    gap: 30px;
+  }
+
+  .product-types span {
+    width: auto;
+  }
+}
