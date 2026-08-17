@@ -6,7 +6,7 @@ export default function Footer() {
     <>
       <section className="footer-section">
         <div className="footer-div">
-          <div>- Milan - Tokyo - Borgomanero -</div>
+          <div>-Milan - Tokyo - Borgomanero-</div>
           <div>
             <a href="mailto:francescozonca.studio@gmail.com">
               francescozonca.studio@gmail.com
