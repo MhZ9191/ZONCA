@@ -41,7 +41,10 @@ export default function SpacesPage() {
                 <>
                   <div key={el.slug} className="spaces-card">
                     <Link to={"/spaces/" + el.slug}>
-                      <img src={el.image} alt={el.slug} />
+                      <img
+                        src={`${import.meta.env.BASE_URL}${el.image}`}
+                        alt={el.slug}
+                      />
                       <div className="spaces-name">{el.name}</div>
                     </Link>
                   </div>

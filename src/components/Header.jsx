@@ -11,7 +11,7 @@ export default function Header() {
           <div className="header-logo">
             <Link to="/home">
               <img
-                src={`${import.meta.env.BASE_URL}img/logo white.png`}
+                src={`${import.meta.env.BASE_URL}/img/logo white.png`}
                 alt="home"
               />
               {/* <img src="/img/logo white.png" alt="home" /> */}

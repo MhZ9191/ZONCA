@@ -50,7 +50,10 @@ export default function DetailSpacePage() {
               space.imgs.map((el, i) => {
                 return (
                   <div key={i} className="detail-image">
-                    <img src={el} alt={"image-" + el} />
+                    <img
+                      src={`${import.meta.env.BASE_URL}${el}`}
+                      alt={"image-" + el}
+                    />
                   </div>
                 );
               })}
