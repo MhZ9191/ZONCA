@@ -18,14 +18,20 @@ export default function Footer() {
               target="blank"
             >
               <div className="instagram-div">
-                <img src="/img/insta.png" alt="instagram" />
+                <img
+                  src={`${import.meta.env.BASE_URL}img/insta.png`}
+                  alt="instagram"
+                />
                 <span>FrancescoZoncaStudio</span>
               </div>
             </Link>
           </div>
           <div className="footer-logo">
             <span>&copy; Copyright - FrancescoZoncaStudio</span>
-            <img src="/img/logo white.png" alt="logo" />
+            <img
+              src={`${import.meta.env.BASE_URL}img/logo white.png`}
+              alt="logo"
+            />
           </div>
         </div>
       </section>

@@ -10,7 +10,11 @@ export default function Header() {
         <div className="header-div">
           <div className="header-logo">
             <Link to="/home">
-              <img src="/img/logo white.png" alt="home" />
+              <img
+                src={`${import.meta.env.BASE_URL}img/logo white.png`}
+                alt="home"
+              />
+              {/* <img src="/img/logo white.png" alt="home" /> */}
             </Link>
           </div>
           <div className="header-link">
